@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Frontend Mentor | Multi-step form</title>
+</head>
+<body>
+<main>
+    <div class="container">
+    <div class="sidebar">
+        <ul id="options">
+            <li>
+                <button onclick="window.location.href = 'index.html';"
+                        class="sidebar-button">
+                    1
+                </button>
+                <a class="grey">Step 1</a><br>
+                <a class="page-label">YOUR INFO</a><br>
+            </li>
+            <li>
+                <button onclick="window.location.href = 'select-plan.html';"
+                        class="sidebar-button"
+                        style="
+                            border: none;
+                            background-color: hsl(228, 100%, 84%);
+                            color: black;
+                        "
+                >2</button>
+                <a class="grey">Step 2</a><br>
+                <a class="page-label">SELECT PLAN</a><br>
+            </li>
+            <li>
+                <button onclick="window.location.href = '#';" class="sidebar-button">3</button>
+                <a class="grey">Step 3</a><br>
+                <a class="page-label">ADD-ONS</a><br>
+            </li>
+            <li>
+                <button onclick="window.location.href = '#';" class="sidebar-button">4</button>
+                <a class="grey">Step 4</a><br>
+                <a class="page-label">SUMMARY</a><br>
+            </li>
+        </ul>
+    </div>
+    <div class="plan-container">
+        <h1>Select your plan</h1>
+        <h3>You have the option of monthly or yearly billing.</h3>
+        <div class="options">
+            <div class="selections">
+                <img src="assets/images/icon-arcade.svg" alt="arcade icon">
+                <p>Arcade</p>
+                <p class="cost">$ 9/mo</p>
+            </div>
+            <div class="selections">
+                <img src="assets/images/icon-advanced.svg" alt="arcade icon">
+                <p>Advance</p>
+                <p class="cost">$ 12/mo</p>
+            </div>
+            <div class="selections">
+                <img src="assets/images/icon-pro.svg" alt="arcade icon">
+                <p>pro</p>
+                <p class="cost">$ 15/mo</p>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+  Coded by <a href="https://github.com/SymonMuchemi">Simon Muchemi</a>.
+</div>
+</body>
+</html>
