@@ -15,7 +15,7 @@
     <div class="sidebar">
         <ul id="options">
             <li>
-                <button onclick="window.location.href = 'index.html';"
+                <button onclick="window.location.href = '/index.html';"
                         class="sidebar-button">
                     1
                 </button>
@@ -23,19 +23,21 @@
                 <a class="page-label">YOUR INFO</a><br>
             </li>
             <li>
-                <button onclick="window.location.href = 'select-plan.html';"
+                <button onclick="window.location.href = '/select-plan.html';"
+                        class="sidebar-button"
+                >2</button>
+                <a class="grey">Step 2</a><br>
+                <a class="page-label">SELECT PLAN</a><br>
+            </li>
+            <li>
+                <button onclick="window.location.href = '/pick-add-ons.html';"
                         class="sidebar-button"
                         style="
                             border: none;
                             background-color: hsl(228, 100%, 84%);
                             color: black;
                         "
-                >2</button>
-                <a class="grey">Step 2</a><br>
-                <a class="page-label">SELECT PLAN</a><br>
-            </li>
-            <li>
-                <button onclick="window.location.href = '#';" class="sidebar-button">3</button>
+                >3</button>
                 <a class="grey">Step 3</a><br>
                 <a class="page-label">ADD-ONS</a><br>
             </li>
@@ -47,32 +49,37 @@
         </ul>
     </div>
     <div class="plan-container">
-        <h1>Select your plan</h1>
-        <h3>You have the option of monthly or yearly billing.</h3>
-        <section>
-            <div class="tile" id="arcade-tab">
-                <img src="assets/images/icon-arcade.svg" alt="arcade icon" width="40" height="40">
-                <p class="label-text">Arcade</p>
-                <p class="cost">$9/mo</p>
-            </div>
-            <div class="tile" id="advanced-tab">
-                <img src="assets/images/icon-advanced.svg" alt="advance icon" width="40" height="40">
-                <p class="label-text">Arcade</p>
-                <p class="cost">$9/mo</p>
-            </div>
-            <div class="tile" id="pro-tab">
-                <img src="assets/images/icon-pro.svg" alt="pro icon" width="40" height="40">
-                <p class="label-text">Arcade</p>
-                <p class="cost">$9/mo</p>
-            </div>
-        </section>
-        <div class="duration">
-            <p class="label-text">Monthly</p>
-            <label class="switch">
-                <input type="checkbox" checked>
-                <span class="slider round"></span>
+        <h1>Pick Add-ons</h1>
+        <h3>Add-ons help enhance your gaming experience.</h3>
+        <div class="add-ons">
+            <label for="service" class="add-ons-label">
+                <input type="checkbox" name="online-service" id="service">
+                <div class="labels">
+                    <p class="label-text">Online services</p>
+                    <p class="cost">Access multiplayer games</p>
+                </div>
+                <span class="add-on-cost">+$1/mo</span>
             </label>
-            <p class="cost">Yearly</p>
+        </div>
+        <div class="add-ons">
+            <label for="storage" class="add-ons-label">
+                <input type="checkbox" name="online-service" id="storage">
+                <div class="labels">
+                    <p class="label-text">Larger storage</p>
+                    <p class="cost">Extra 1TB of cloud save</p>
+                </div>
+                <span class="add-on-cost">+$2/mo</span>
+            </label>
+        </div>
+        <div class="add-ons">
+            <label for="profile" class="add-ons-label">
+                <input type="checkbox" name="online-service" id="profile">
+                <div class="labels">
+                    <p class="label-text">Customizable profile</p>
+                    <p class="cost">Custom theme on your profile</p>
+                </div>
+                <span class="add-on-cost">+$1/mo</span>
+            </label>
         </div>
         <div class="button-container">
             <button id="back" onclick="window.location.href = 'index.html'">Go Back</button>

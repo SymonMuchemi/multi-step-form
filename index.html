@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <title>Frontend Mentor | Multi-step form</title>
 </head>
 <body>
@@ -47,7 +47,7 @@
         <h1>Personal info</h1>
         <h3>Please provide your name, email address, and phone number.
         </h3>
-        <form>
+        <form action="/select-plan.html">
             <label for="name">Name
                 <input id="name" type="text" placeholder="e.g. Stephen King">
             </label><br>
@@ -59,7 +59,9 @@
             </label>
             <div class="button-container">
                 <button id="back" style="visibility: hidden;">Go Back</button>
-                <button id="next">Next Step</button>
+                <a href="/select-plan.html">
+                    <button id="next">Next Step</button>
+                </a>
             </div>
         </form>
     </div>
