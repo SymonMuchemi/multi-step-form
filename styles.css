@@ -2,10 +2,12 @@
     font-size: 11px;
     text-align: center;
 }
+
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
-body{
+
+body {
     min-height: 100vh;
     margin: 0;
     display: flex;
@@ -15,7 +17,12 @@ body{
     font-family: Ubuntu, serif;
     background-color: hsl(204, 67%, 94%);
 }
-.container{
+
+h1 {
+    color: hsl(213, 72%, 15%);
+}
+
+.container {
     background-color: hsl(0, 0%, 100%);
     display: flex;
     flex-direction: row;
@@ -24,34 +31,41 @@ body{
     height: 85vh;
     width: 65vw;
 }
-.sidebar{
+
+.sidebar {
     width: 30%;
     background: url("assets/images/bg-sidebar-desktop.svg") no-repeat;
     background-size: cover;
     border-radius: 10px;
     margin: 10px;
 }
-ul{
+
+ul {
     list-style: none;
     align-items: baseline;
 }
-a{
+
+a {
     line-height: 20px;
 }
-li{
+
+li {
     margin-bottom: 20px;
 }
-.grey{
-    color:hsl(231, 11%, 63%);
+
+.grey {
+    color: hsl(231, 11%, 63%);
     text-transform: uppercase;
     font-weight: 500;
 }
-.page-label{
+
+.page-label {
     margin-left: 46px;
     font-weight: 700;
     color: hsl(0, 0%, 100%);
 }
-.sidebar-button{
+
+.sidebar-button {
     color: hsl(0, 0%, 100%);
     padding: 10px 14px;
     font-weight: 500;
@@ -60,27 +74,33 @@ li{
     margin-right: 5px;
     border-radius: 50%;
 }
-.sidebar-button:hover{
+
+.sidebar-button:hover {
     cursor: pointer;
 }
+
 /* Form styling*/
-.myForm{
+.myForm {
     padding: 20px 60px 20px 60px;
 }
-.myForm h1{
+
+.myForm h1 {
     color: hsl(213, 96%, 18%);
 }
-h3{
+
+h3 {
     font-size: 15px;
     color: hsl(231, 11%, 63%);
 }
-label{
+
+label {
     display: flex;
     flex-direction: column;
     line-height: 30px;
     color: hsl(213, 96%, 18%);
 }
-input[type=email], input[type=tel], input[type=text]{
+
+input[type=email], input[type=tel], input[type=text] {
     padding: 15px;
     border-radius: 10px;
     border: 1px solid hsl(231, 11%, 63%);
@@ -88,58 +108,70 @@ input[type=email], input[type=tel], input[type=text]{
     font-weight: 600;
     color: hsl(213, 96%, 18%);
 }
-input:hover{
+
+input:hover {
     border: 1px solid hsl(213, 96%, 18%);
 }
-input:focus{
+
+input:focus {
     border: 1px solid hsl(213, 96%, 18%);
 }
-::placeholder{
+
+::placeholder {
     color: hsl(231, 11%, 63%);
     font-size: 15px;
     font-weight: 600;
 }
-.button-container{
+
+.button-container {
     margin-top: 25%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.button-container button{
+
+.button-container button {
     border-radius: 10px;
     padding: 10px 20px;
     border: none;
 }
-#next{
+
+#next {
     border: 1px solid hsl(243, 100%, 62%);
     background-color: hsl(213, 96%, 18%);
     color: hsl(0, 0%, 100%);
     font-size: 15px;
     font-weight: 600;
 }
-#next:hover{
+
+#next:hover {
     cursor: pointer;
     background-color: hsl(243, 100%, 62%);
 }
-#back{
+
+#back {
     font-size: 15px;
     color: hsl(231, 11%, 63%);
     background-color: transparent;
     font-weight: 600;
 }
-#back:hover{
+
+#back:hover {
     color: hsl(213, 72%, 15%);
     cursor: pointer;
 }
-.plan-container{
+
+.plan-container {
     margin: 40px;
 }
-.options{
+
+.options {
     display: flex;
     flex-direction: row;
     gap: 5%;
     justify-content: space-between;
 }
+
 .selections {
     border: 1px solid hsl(231, 11%, 63%);
     border-radius: 10px;
@@ -148,21 +180,25 @@ input:focus{
     padding-left: 15px;
     padding-top: 20px;
 }
-.label-text{
+
+.label-text {
     color: hsl(213, 96%, 18%);
     font-weight: 600;
     margin-bottom: -5px;
 }
-.cost{
+
+.cost {
     font-size: 14px;
     font-weight: 500;
     color: hsl(231, 11%, 63%);
 }
-img{
+
+img {
     margin-bottom: 20px;
 }
+
 /*slider styling*/
-.duration{
+.duration {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -174,6 +210,7 @@ img{
     gap: 100px;
     font-size: 15px;
 }
+
 .switch {
     position: absolute;
     display: inline;
@@ -234,20 +271,23 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
-section{
+
+section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
 }
-.tile{
+
+.tile {
     border-radius: 10px;
     border: 1px solid hsl(231, 11%, 63%);
     padding: 10px 70px 0 20px;
     cursor: pointer;
 }
 
-.add-ons-label{
+/* TODO: change the background color when the checkbox is checked */
+.add-ons-label {
     display: flex;
     flex-direction: row;
     /*justify-content: space-between;*/
@@ -255,16 +295,89 @@ section{
     line-height: 15px;
     margin-top: 20px;
     padding-left: 10px;
-    border: 1px solid hsl(213, 96%, 18%);
+    border: 1px solid hsl(260, 96%, 18%);
     border-radius: 10px;
     gap: 90px;
+
+    .labels {
+        margin-left: -70px;
+    }
 }
-.add-ons-label .labels{
-    margin-left: -70px;
+
+.add-ons-label:hover {
+    cursor: pointer;
 }
-.add-on-cost{
+
+.add-on-cost {
     margin-right: 0;
     margin-top: 20px;
     padding-right: 5px;
     color: hsl(213, 96%, 18%);
+}
+
+.list {
+    background-color: hsl(227, 27%, 94%);
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+
+    & h3 {
+        color: hsl(213, 72%, 15%);
+    }
+
+    & .head {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .items-list {
+        display: flex;
+        flex-direction: column;
+
+        & .item {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
+
+.totals {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+#summary-buttons {
+    margin-top: 20px;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 70%;
+
+    & p {
+        text-align: center;
+    }
+
+    & h3 {
+        color: hsl(213, 72%, 15%);
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
+    .message {
+        color: hsl(231, 11%, 63%);
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: -10px;
+        font-size: 1.1rem;
+    }
 }
