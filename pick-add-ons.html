@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <link rel="stylesheet" href="styles.css">
@@ -12,85 +13,87 @@
 <body>
 <main>
     <div class="container">
-    <div class="sidebar">
-        <ul id="options">
-            <li>
-                <button onclick="window.location.href = '/index.html';"
-                        class="sidebar-button">
-                    1
-                </button>
-                <a class="grey">Step 1</a><br>
-                <a class="page-label">YOUR INFO</a><br>
-            </li>
-            <li>
-                <button onclick="window.location.href = '/select-plan.html';"
-                        class="sidebar-button"
-                >2</button>
-                <a class="grey">Step 2</a><br>
-                <a class="page-label">SELECT PLAN</a><br>
-            </li>
-            <li>
-                <button onclick="window.location.href = '/pick-add-ons.html';"
-                        class="sidebar-button"
-                        style="
+        <div class="sidebar">
+            <ul id="options">
+                <li>
+                    <button onclick="window.location.href = '/index.html';"
+                            class="sidebar-button">
+                        1
+                    </button>
+                    <a class="grey">Step 1</a><br>
+                    <a class="page-label">YOUR INFO</a><br>
+                </li>
+                <li>
+                    <button onclick="window.location.href = '/select-plan.html';"
+                            class="sidebar-button"
+                    >2
+                    </button>
+                    <a class="grey">Step 2</a><br>
+                    <a class="page-label">SELECT PLAN</a><br>
+                </li>
+                <li>
+                    <button onclick="window.location.href = '/pick-add-ons.html';"
+                            class="sidebar-button"
+                            style="
                             border: none;
                             background-color: hsl(228, 100%, 84%);
                             color: black;
                         "
-                >3</button>
-                <a class="grey">Step 3</a><br>
-                <a class="page-label">ADD-ONS</a><br>
-            </li>
-            <li>
-                <button onclick="window.location.href = '#';" class="sidebar-button">4</button>
-                <a class="grey">Step 4</a><br>
-                <a class="page-label">SUMMARY</a><br>
-            </li>
-        </ul>
+                    >3
+                    </button>
+                    <a class="grey">Step 3</a><br>
+                    <a class="page-label">ADD-ONS</a><br>
+                </li>
+                <li>
+                    <button onclick="window.location.href = '/summary.html';" class="sidebar-button">4</button>
+                    <a class="grey">Step 4</a><br>
+                    <a class="page-label">SUMMARY</a><br>
+                </li>
+            </ul>
+        </div>
+        <div class="plan-container">
+            <h1>Pick Add-ons</h1>
+            <h3>Add-ons help enhance your gaming experience.</h3>
+            <div class="add-ons">
+                <label for="service" class="add-ons-label">
+                    <input type="checkbox" name="online-service" id="service">
+                    <div class="labels">
+                        <p class="label-text">Online services</p>
+                        <p class="cost">Access multiplayer games</p>
+                    </div>
+                    <span class="add-on-cost">+$1/mo</span>
+                </label>
+            </div>
+            <div class="add-ons">
+                <label for="storage" class="add-ons-label">
+                    <input type="checkbox" name="online-service" id="storage">
+                    <div class="labels">
+                        <p class="label-text">Larger storage</p>
+                        <p class="cost">Extra 1TB of cloud save</p>
+                    </div>
+                    <span class="add-on-cost">+$2/mo</span>
+                </label>
+            </div>
+            <div class="add-ons">
+                <label for="profile" class="add-ons-label">
+                    <input type="checkbox" name="online-service" id="profile">
+                    <div class="labels">
+                        <p class="label-text">Customizable profile</p>
+                        <p class="cost">Custom theme on your profile</p>
+                    </div>
+                    <span class="add-on-cost">+$1/mo</span>
+                </label>
+            </div>
+            <div class="button-container">
+                <button id="back" onclick="window.location.href = 'index.html'">Go Back</button>
+                <button id="next">Next Step</button>
+            </div>
+        </div>
     </div>
-    <div class="plan-container">
-        <h1>Pick Add-ons</h1>
-        <h3>Add-ons help enhance your gaming experience.</h3>
-        <div class="add-ons">
-            <label for="service" class="add-ons-label">
-                <input type="checkbox" name="online-service" id="service">
-                <div class="labels">
-                    <p class="label-text">Online services</p>
-                    <p class="cost">Access multiplayer games</p>
-                </div>
-                <span class="add-on-cost">+$1/mo</span>
-            </label>
-        </div>
-        <div class="add-ons">
-            <label for="storage" class="add-ons-label">
-                <input type="checkbox" name="online-service" id="storage">
-                <div class="labels">
-                    <p class="label-text">Larger storage</p>
-                    <p class="cost">Extra 1TB of cloud save</p>
-                </div>
-                <span class="add-on-cost">+$2/mo</span>
-            </label>
-        </div>
-        <div class="add-ons">
-            <label for="profile" class="add-ons-label">
-                <input type="checkbox" name="online-service" id="profile">
-                <div class="labels">
-                    <p class="label-text">Customizable profile</p>
-                    <p class="cost">Custom theme on your profile</p>
-                </div>
-                <span class="add-on-cost">+$1/mo</span>
-            </label>
-        </div>
-        <div class="button-container">
-            <button id="back" onclick="window.location.href = 'index.html'">Go Back</button>
-            <button id="next">Next Step</button>
-        </div>
-    </div>
-</div>
 </main>
 <div class="attribution">
-  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-  Coded by <a href="https://github.com/SymonMuchemi" target="_blank">Simon Muchemi</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/SymonMuchemi" target="_blank">Simon Muchemi</a>.
 </div>
 </body>
 </html>
